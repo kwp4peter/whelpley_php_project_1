@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+
+<title>WEXP</title>
+
+<link rel="stylesheet" type="text/css" href="style/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="style/bootstrap-grid.css" />
+<link rel="stylesheet" type="text/css" href="style/bootstrap-reboot.css" />
+<link rel="stylesheet" type="text/css" href="style/perspectiveRules.css" />
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+<script type="text/javascript" src="js/jquery.fullpage.extensions.min"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/anime.min.js"></script>
+<script type="text/javascript" src="js/jquery.particleground.min.js"></script>
+<script type="text/javascript" src="js/jquery.logosDistort.min.js"></script>
+
+</head>
+
+<body>
+
+
+<div id="fullpage"> <!-- BEGIN FULLPAGE / CONTENT -->
+
+	<!-- INTRO -->
+	
+	<div class="section" id="intro">
+
+		<div class="container" id="introContainer">
+
+			<div class="row justify-content-center">
+
+				<div class="col-10 col-12-sm align-self-center">
+
+					<div id="introHeader">
+
+						<h1 id="brand" class="text-center">WEXP</h1>
+
+						<h2 id="subBrand" class="text-center">a web experience study</h2>
+
+					</div> <!-- intro header -->
+			
+					<div id="introBody">
+
+						<p class="text-justify">With 966 million websites online and connected, there is an intense demand for tools and services that help publish one's own website quickly, safely, and beautifully.  Often the tiniest details can make or break a website's ability to guide and hold a user's attention.  Like all design, web design is about the audience.  It's impossible to design in a way that it 'works' for every individual, but there are ways to gear design towards majorities.</p>
+
+						<p class="text-justify">But what if these majorities in themselves have vast differences in usability and user-friendly needs, specifically affected by age difference?  That's what I look to find in building this website:</p>
+
+						<p id="introThesis" class="text-center">How important is web design to people of different ages?</p>
+
+					</div> <!-- intro body -->
+
+				</div> <!-- intro col -->
+
+			</div> <!-- intro row -->
+
+		</div> <!-- container-fluid" -->
+
+	</div> <!-- INTRO SECTION -->
+
+	<!-- END INTRO -->
+
+	<!-- AGE -->
+
+	<div class="section" id="ageSection">
+
+		<div class="container" id="ageContent">
+
+			<div class="row justify-content-center">
+
+				<div class="row justify-content-center">
+
+					<div class="col-12">
+
+						<p>If you don't mind me asking, how old are you?</p>
+
+					</div> <!-- age question col -->
+
+				</div> <!-- age question row -->
+
+				<div class="col-12">
+
+					<div id="ageForm">
+
+						<div class="row justify-content-center">
+
+							<form name="form1" id="form1" method="post" action="scripts/submit.php" target="frame" autocomplete="off">
+
+								<fieldset>
+
+									<input type="number" name="age" id="age" />
+
+								</fieldset> <!-- age fieldset -->
+<!--
+								<div class="row justify-content-center">
+
+									<fieldset id="submitForm1">
+									
+										<input type="submit" class="button1" name="submitbutton1" id="submitButton" value="" />
+
+									</fieldset> 
+
+								</div>  submitRow -->
+
+							</form> <!-- age form -->
+
+						</div> <!-- age form row -->
+
+					</div> <!-- ageForm div -->
+
+				</div> <!-- ageForm col -->
+
+			</div> <!-- age MAIN row -->
+
+		</div> <!-- age container -->
+
+	</div> <!-- age section -->
+
+	<!-- END AGE -->
+
+	<!-- BAR -->
+
+	<div class="section" id="barSection">
+
+		<div class="container-fluid" id="barContent">
+
+			<div class="row justify-content-center">
+
+				<div id="bar" class="unclicked">
+
+					<div id="barInside" class="container">
+
+						<div class="row justify-content-center">
+
+							<div class="col-12 align-self-center">
+
+								<div id="barCopy">
+
+									<p class="text-center">Oh good!  You clicked on the line!  I was worried that you would scroll past and not realize it was a button...but I guess that's the point. Anyways, would this icon <img src="images/pointer.png" /> have helped you realize it was a button?</p>
+
+									<div class="row justify-content-center" id="barForm2">
+
+										<form name="form2" id="form2" method="post" action="scripts/form-pages/form2.php" target="frame" autocomplete="off">	
+											<fieldset>
+
+												<input type="radio" name="radio2" id="yes" value="Yes" />
+												<label for="yes">Yes</label>
+
+												<input type="radio" name="radio2" id="no" value="No" />
+												<label for="no">No, I didn't need it.</label>
+<!--
+												<div class="row justify-content-center">
+
+													<fieldset id="submitForm2">
+													
+														<input type="submit" class="button2" name="submitbutton2" id="submitButton" value="" />
+
+													</fieldset> 
+
+												</div>  submitRow -->
+
+											</fieldset> <!-- fieldset -->
+
+										</form> <!-- form -->
+
+									</div> <!-- form row #2 -->
+
+								</div> <!-- barCopy -->
+
+							</div> <!-- col -->
+
+						</div> <!-- row -->
+
+					</div> <!-- container -->
+
+				</div> <!-- bar -->
+
+			</div> <!-- intro row justify-content-center -->
+
+		</div> <!-- intro container-fluid -->
+
+	</div> <!-- fullpage 'bar' wrapper -->
+
+	<!-- END BAR -->
+
+	<!-- BEGIN MENU -->
+
+	<div class="section" id="buttonSection">
+
+		<div class="container" id="buttonContent">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12 col-12-sm">
+
+					<p class="text-center" id="buttonText">Alright, let's try something a little different. Two buttons will appear below, and you have <span>less than <b>1</b> second</span> to press the "Accept" button.  This is an excercise about button placement. Press the button below to start, and it will be replaced with two buttons in the same position.</p>
+
+					<div class="row justify-content-center" id="rdyButton">
+
+						<input onclick="change()" type="button" value="I'm Ready!" id="ready" />
+
+					</div> <!-- ready button row -->
+
+					<div class="row justify-content-center">
+
+						<div id="buttons" class="hide">
+
+							<input onclick="result(this)" type="button" value="Decline" id="decline" />
+
+							<input onclick="result(this)" type="button" value="Accept" id="accept" />
+
+						</div> <!-- buttons div -->
+
+					</div> <!-- buttons row -->
+
+				</div> <!-- buttonSection col -->
+
+			</div> <!-- button row justify-content-center -->
+
+		</div> <!-- buttonSection container-fluid -->
+
+	</div> <!-- buttonSection section -->
+
+	<div class="section" id="menuSection">
+
+		<div class="container" id="menuContent">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12 col-12-sm">
+
+					<p class="text-center">If you're ready to move on to the next section, go ahead and scroll down!</p>
+
+					<div id="hamMenu" onclick="menu(this)">
+
+						<div id="menuBar1"></div>
+						<div id="menuBar2"></div>
+						<div id="menuBar3"></div>
+
+					</div>
+
+				</div> <!-- menu col -->
+
+			</div> <!-- menu row -->
+
+			<div id="hiddenMenuContent"  class="hide">
+
+				<div id="menuContent class="row justify-content-center">
+
+					<p class="text-center">Why would you click that?!  I said scroll down to the next section!</p>
+
+					<div class="row justify-content-center" id="menuForm">
+
+						<form name="form3" id="form3" method="post" target="frame" action="scripts/form-pages/form3.php">	
+
+							<fieldset>
+
+								<input type="radio" name="radio3" id="op1" value="op1" />
+								<label for="op1">It's universally understood as a menu icon.</label>
+								<br/>
+
+									
+								<input type="radio" name="radio3" id="op2" value="op2" />
+								<label for="op2">My life is spiralling out of control and I didn't know what else to do.</label>
+								<br/>
+
+									
+								<input type="radio" name="radio3" id="op3" value="op3" />
+								<label for="op3">Last time you put a line on the page I almost skipped it, asshole.</label>
+								<br/>
+
+
+								<input type="radio" name="radio3" id="op4" value="op4" />
+								<label for="op4">I was curious.</label>
+
+							</fieldset> <!-- fieldset -->
+<!--
+							<div class="row justify-content-center">
+
+								<fieldset id="submitForm3">
+								
+									<input type="submit" class="button3" name="submitbutton3" id="submitButton" value="" />
+
+								</fieldset> 
+
+							</div> submitRow -->
+
+						</form> <!-- form -->
+
+					</div> <!-- form row #2 -->
+
+				</div> <!-- menu row -->
+
+			</div> <!-- menu wrapper -->
+
+		</div> <!-- menu container -->
+
+	</div> <!-- MENU SECTION -->
+
+	<!-- BEGIN PARALLAX -->
+
+	<div class="section" id="parallaxSection1">
+
+	<div id="par2">
+	    <img alt="background" src="images/space.jpg" />
+	    <img alt="space2" src="images/space2.png" />
+	    <div></div>
+	    <img alt="asteroids" src="images/asteroids.png" />
+	    <img alt="planet" src="images/planet.png" />
+	    <div></div>
+	    <div></div>
+	    <div></div>
+	    <div></div>
+	    <img alt="ui" src="images/cockpit.png" />
+	</div>
+
+		<div class="container" id="parallax1Content">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12">
+
+					<p class="text-center">Try moving your mouse around.</p>
+
+					<p class="text-center">Does this background seem distracting?</p>
+
+					<div id="parallaxForm1">
+
+						<div class="row justify-content-center" id="parallaxForm1">
+
+							<form name="form4" id="form4" method="post" target="frame" action="scripts/form-pages/form4.php" autocomplete="off">	
+
+								<fieldset>
+
+									<input type="radio" name="radio4" id="yes" value="Yes" />
+									<label for="yes">Yes</label>
+					
+									<input type="radio" name="radio4" id="no" value="No" />
+									<label for="no">No</label>
+
+								</fieldset> <!-- fieldset -->
+<!--
+								<div class="row justify-content-center">
+
+									<fieldset id="submitForm4">
+									
+										<input type="submit" class="button4" name="submitbutton4" id="submitButton" value="" />
+
+									</fieldset> 
+
+								</div> submitRow -->
+
+							</form> <!-- form -->
+
+						</div> <!-- form row -->
+
+					</div> <!-- parallaxForm div -->
+
+				</div> <!-- parallax1 col-12 -->
+
+			</div> <!-- parallax1 main row -->
+
+		</div> <!-- container -->	
+
+	</div> <!-- parallaxSection section -->
+
+	<!-- END PARALLAX -->
+
+	<!-- BEGIN PARALLAX 2 -->
+
+	<div class="section" id="parallaxSection2">
+
+		<div class="container" id="parallax2Content">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12">
+
+					<p class="text-center">How about this one?</p>
+
+					<div id="parallaxForm1">
+
+						<div class="row justify-content-center" id="parallaxForm2">
+
+							<form name="form5" id="form5" method="post" target="frame" action="scripts/form-pages/form5.php" autocomplete="off">	
+
+								<fieldset>
+
+									<input type="radio" name="radio5" id="yes" value="Yes" />
+									<label for="yes">Yes, I am going blind please stop.</label>
+
+									<br/>
+
+									<input type="radio" name="radio5" id="no" value="No" />
+									<label for="no">No, it's fine.</label>
+
+								</fieldset> <!-- fieldset -->
+<!--
+								<div class="row justify-content-center">
+
+									<fieldset id="submitForm5">
+									
+										<input type="submit" class="button5" name="submitbutton5" id="submitButton" value="" />
+
+									</fieldset> 
+
+								</div> id="form6"submitRow -->
+
+							</form> <!-- form -->
+
+						</div> <!-- form row -->
+
+					</div> <!-- parallaxForm div -->
+
+				</div> <!-- parallax1 col-12 -->
+
+			</div> <!-- parallax1 main row -->
+
+		</div> <!-- container -->	
+
+	</div> <!-- parallaxSection section -->
+
+	<!-- END PARALLAX 2 -->
+
+	<!-- PARALLAX 3 -->
+
+	<div class="section" id="parallaxSection3">
+
+	<div id="par1">
+
+		<img src="images/space.jpg" id="spaceImage" />
+
+		<div id="particle-target"></div>
+
+	</div> <!-- parallax1 -->
+
+		<div class="container" id="parallaxContent3">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12">
+
+					<p class="text-center">The purpose of the last two sections was to emphasize the importance of using animated backgrounds carefully and with caution.  A background that can be too distracting may direct the user's attention away from your content, which is the last thing you want.  This especially includes backgrounds with high responsiveness, like the first one.  Too much fun means less attention is given to your content.</p>
+
+				</div> <!-- parallax 3 col-12 -->
+
+			</div> <!-- parallax 3 row -->
+
+		</div> <!-- parallax 3 container -->
+
+	</div> <!-- parallax 3 section --> 
+
+	<div class="section" id="typeSection">
+
+		<div class="container" id="typeContent">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12">
+
+					<p class="text-center">Let's talk more about the content of a page.  There are many ways to display content, but one of the biggest things that can be overlooked is the type.  Choosing effective typefaces, colors, and spacing is essential to making sure your content can be read well by all readers.</p>
+
+				</div> <!-- col-12 -->
+
+			</div> <!-- row -->
+
+		</div> <!-- container -->
+
+	</div> <!-- section -->
+
+	<div class="section" id="typeSection2">
+
+		<div class="container-fluid" id="typeContent2">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12">
+
+					<p class="text-center">Of these three options, which is the most legible to you?</p>
+
+				</div> <!-- header col-12 -->
+
+				<div class="col-5">
+
+					<form class="typeForm1"  id="form6" name="form6"  target="frame" method="post" action="scripts/form-pages/form6.php" autocomplete="off">	
+
+						<fieldset>
+
+							
+							<label id="op1Label" for="1">
+							<input type="radio" name="radio6" id="op1" value="1" />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit lectus a posuere porttitor. Aenean tincidunt felis suscipit lectus viverra rutrum. Pellentesque fringilla est sed erat dictum tristique.</label>
+							
+							<label id="op2Label" for="2">
+							<input type="radio" name="radio6" id="op2" value="2" />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit lectus a posuere porttitor. Aenean tincidunt felis suscipit lectus viverra rutrum. Pellentesque fringilla est sed erat dictum tristique.</label>
+					
+							<label id="op3Label" for="3">
+							<input type="radio" name="radio6" id="op3" value="3" />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit lectus a posuere porttitor. Aenean tincidunt felis suscipit lectus viverra rutrum. Pellentesque fringilla est sed erat dictum tristique.</label>
+
+						</fieldset> <!-- fieldset -->
+
+						<!--
+						<div class="row justify-content-center">
+
+							<fieldset id="submitForm6">
+							
+								<input type="submit" class="button6" name="submitbutton6" id="submitButton" value="" />
+
+							</fieldset> 
+
+						</div> submitRow -->
+
+					</form> <!-- form -->
+
+				</div> <!-- op col-6 -->
+
+			</div> <!-- main row -->
+
+		</div> <!-- container -->
+
+	</div> <!-- section -->
+
+	<div class="section" id="typeSection3">
+
+		<div class="container-fluid" id="typeContent3">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12">
+
+					<p class="text-center">How about these three?</p>
+
+				</div> <!-- header col-12 -->
+
+				<div class="col-5">
+
+					<form class="typeForm2" id="form7" name="form7" target="frame" method="post" action="scripts/form-pages/form7.php" autocomplete="off">	
+
+						<fieldset>
+
+							
+							<label id="op1Label2" for="1">
+							<input type="radio" name="radio7" id="op1" value="1" />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit lectus a posuere porttitor. Aenean tincidunt felis suscipit lectus viverra rutrum. Pellentesque fringilla est sed erat dictum tristique.</label>
+							
+							<label id="op2Label2" for="2">
+							<input type="radio" name="radio7" id="op2" value="2" />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit lectus a posuere porttitor. Aenean tincidunt felis suscipit lectus viverra rutrum. Pellentesque fringilla est sed erat dictum tristique.</label>
+					
+							<label id="op3Label2" for="3">
+							<input type="radio" name="radio7" id="op3" value="3" />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit lectus a posuere porttitor. Aenean tincidunt felis suscipit lectus viverra rutrum. Pellentesque fringilla est sed erat dictum tristique.</label>
+
+						</fieldset> <!-- fieldset -->
+
+						<!--
+
+						<div class="row justify-content-center">
+
+							<fieldset id="submitForm7">
+							
+								<input type="submit" class="button7" name="submitbutton7" id="submitButton" value="" />
+
+							</fieldset>
+
+						</div> submitRow -->
+
+					</form> <!-- form -->
+
+				</div> <!-- op col-6 -->
+
+			</div> <!-- main row -->
+
+		</div> <!-- container -->
+
+	</div> <!-- section -->
+
+	<div class="section" id="typeSection4">
+
+		<div class="container-fluid" id="typeContent4">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12">
+
+					<p class="text-center">And finally, these three?</p>
+
+				</div> <!-- header col-12 -->
+
+				<div class="col-5">
+
+					<form class="typeForm3" id="form8" name="form8" target="frame" method="post" action="scripts/form-pages/form8.php" autocomplete="off">	
+
+						<fieldset>
+
+							
+							<label id="op1Label3" for="1">
+							<input type="radio" name="radio8" id="op1" value="1" />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit lectus a posuere porttitor. Aenean tincidunt felis suscipit lectus viverra rutrum. Pellentesque fringilla est sed erat dictum tristique.</label>
+							
+							<label id="op2Label3" for="2">
+							<input type="radio" name="radio8" id="op2" value="2" />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit lectus a posuere porttitor. Aenean tincidunt felis suscipit lectus viverra rutrum. Pellentesque fringilla est sed erat dictum tristique.</label>
+					
+							<label id="op3Label3" for="3">
+							<input type="radio" name="radio8" id="op3" value="3" />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit lectus a posuere porttitor. Aenean tincidunt felis suscipit lectus viverra rutrum. Pellentesque fringilla est sed erat dictum tristique.</label>
+
+						</fieldset> <!-- fieldset -->
+
+						<!--
+						<div class="row justify-content-center">
+
+							<fieldset id="submitForm8">
+							
+								<input type="submit" class="button8" name="submitbutton8" id="submitButton" value="" />
+
+							</fieldset> 
+
+						</div>  submitRow -->
+
+					</form> <!-- form -->
+
+				</div> <!-- op col-6 -->
+
+			</div> <!-- main row -->
+
+		</div> <!-- container -->
+
+	</div> <!-- section -->
+
+	<!-- END TYPE -->
+
+	<div class="section" id="layoutSection">
+
+		<div class="container" id="layoutContent">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12">
+
+					<p class="text-center">Last, but certainly not least, is content format. What I am referring to are popular models of site layouts.  My personal favorite is a one-page scroller, much like this site.  Websites can also be multipage simple layouts, or a hybrid of one-page scrolling and multipage formats.  What has become more popular, especially for advertising agencies, is multi-page article websites. </p>
+
+				</div> <!-- layout col-12 -->
+
+			</div> <!-- layout row -->
+
+		</div> <!-- layout container -->
+
+	</div> <!-- layout section -->
+
+	<div class="section" id="layoutSection2">
+
+		<div class="container" id="layoutContent2">
+
+			<div class="row justify-content-center">
+
+				<div id="slider">
+
+				  <a href="#" class="control_next">>></a>
+
+				  <div id="outsideSliderBG">
+
+					  <div id="outsideSlider">
+
+					  	<ul id="sliderList">
+
+					    <li>What I am referring to are website articles that require you to</li>
+
+					    <li>Press 'next' and reload the page each</li>
+
+					    <li>time you want to continue reading the article, or to see the</li>
+
+					    <li>top 10 loudest pumpkins in Pittsburg.  This</li>
+
+					    <li>format is extremely popular because</li>
+
+					    <li>it generates a monstrous amount of ad revenue by</li>
+
+					    <li>forcing</li>
+
+					    <li>the</li>
+
+					    <li>reader to reload each ad everytime they advance through</li>
+
+					    <li>the article. My question for you is:</li>
+
+					    <li>
+					    <div id="layoutQuestion">
+
+						    <span>
+						    Would you read the article if it was in this format?</span> <br/><br/>
+
+					    	<form class="layoutForm" id="form9" name="form9" target="frame" method="post" action="scripts/form-pages/form9.php" autocomplete="off"> 
+
+							    <fieldset>
+
+									<input type="radio" name="radio9" id="yes" value="Yes" />
+									<label for="yes">Yes, because I have the patience of a rock.</label>
+
+									<br/>
+
+									<input type="radio" name="radio9" id="no" value="No" />
+									<label for="no">No, and I wish to see this format be illegal.</label>
+
+								</fieldset> <!-- fieldset -->
+
+								<!-- 
+
+								<div class="row justify-content-center">
+
+									<fieldset id="submitForm9">
+									
+										<input type="submit" class="button9" name="submitbutton9" id="submitButtonNoMove" value="" />
+
+									</fieldset>  submit fieldset
+
+								</div>  submitRow -->
+
+							</form>
+
+						</div> <!-- layoutQuestion div -->
+							
+					    </li>
+
+					  </ul>  <!-- slider ul -->
+
+					</div> <!-- outside slider -->
+
+				</div> <!-- outsdide slider BG -->
+
+				</div> <!-- slider div -->
+
+			</div> <!-- layoutContent2 row -->
+
+		</div><!-- layoutContent2 container -->
+
+	</div> <!-- layoutSection2 section -->
+
+	<!-- END LAYOUT -->
+
+	<!-- BEGIN CONCLUSION -->
+
+	<div class="section" id="conclusionSection">
+
+		<div class="container" id="conclusionContainer">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12">
+
+					<div>
+						
+						<p class="text-center">Oh, one more question: Did you notice the gray background of this site has been changing the entire time?</p>
+
+						<div class="row justify-content-center">
+
+						<form name="form10" id="form10" method="post" target="frame" action="scripts/form-pages/form10.php" autocomplete="off">	
+
+							<fieldset>
+
+								<input type="radio" name="radio10" id="yes" value="Yes" />
+								<label for="yes">Yes</label>
+
+								<input type="radio" name="radio10" id="no" value="No" />
+								<label for="no">No</label>
+
+							</fieldset> <!-- fieldset -->
+
+							<!--
+
+							<div class="row justify-content-center">
+
+								<fieldset id="submitForm10">
+								
+									<input type="submit" class="button10" name="submitbutton10" id="submitButton" value="" />
+
+								</fieldset> submit fieldset
+
+							</div>  submitRow -->
+
+						</form> <!-- form -->
+
+						</div> <!-- conc form row -->
+
+					</div>
+
+				</div> <!-- conc. col-12 -->
+
+			</div> <!-- conc. row -->
+
+		</div> <!-- conc. container -->
+
+	</div> <!-- conc. section -->
+
+	<!-- END CONCLUSION -->
+
+	<!-- BEGIN GOODBYE -->
+
+	<div class="section" id="byeSection">
+
+		<div class="container" id="byeContainer">
+
+			<div class="row justify-content-center">
+
+				<div class="col-12">
+
+					<p class="text-center">Thank you so much for visiting my website and sticking around to the end!  If you'd like to see the results of you and others, feel free to press the button below!</p>
+
+					<div class="row justify-content-center">
+
+					<a href="#" id="submit">
+
+							<div class="row justify-content-center">
+
+								<p id="finalButtonText" class="text-center" style="margin-top: 30px; text-decoration: none; font-style: none; font-variant: none; width: 180px; font-size: 16px;">SUBMIT</p>
+
+							</div> <!-- span row -->
+
+						<!--</a>-->
+
+					</div> <!-- finalButton row -->
+
+				</div> <!-- bye col -->
+
+			</div> <!-- bye row -->
+
+		</div> <!-- bye container -->
+
+	</div> <!-- byeSection -->
+
+	<!-- END GOODBYE -->
+
+	<!-- FORM CHEATER -->
+
+	<iframe name="frame" style="display: none;"></iframe>
+
+</div> <!-- END FULLPAGE / CONTENT -->
+
+<!-- GLOBAL SCRIPTS -->
+
+<script>
+
+	$(document).ready(function(){
+		$('#fullpage').fullpage();
+	});
+
+</script>
+
+<!-- SUBMIT BUTTON SCRIPTS -->
+
+<script>
+
+$(document).ready(function() {
+    $("#submit").click(function() {
+        $.post($("#form1").attr("action"), $("#form1").serialize()+$("#form2").serialize()+$("#form3").serialize()+$("#form4").serialize()+$("#form5").serialize()+$("#form6").serialize()+$("#form7").serialize()+$("#form8").serialize()+$("#form9").serialize()+$("#form10").serialize()+$("#form11").serialize(),
+              function() {
+                window.location.href = "scripts/submit.php";
+              });
+      });
+  });
+
+/**
+	$(document).ready(function()
+	{
+		$('.button1').click(function()
+		{
+			$('.button1').addClass('submittedLessMove');
+
+		});
+
+		$('.button2').click(function()
+		{
+			$('.button2').addClass('submittedLessMove');
+
+		});
+
+		$('.button3').click(function()
+		{
+			$('.button3').addClass('submittedLessMove');
+
+		});
+
+		$('.button4').click(function()
+		{
+			$('.button4').addClass('submittedLessMove');
+
+		});
+
+		$('.button5').click(function()
+		{
+			$('.button5').addClass('submittedLessMove');
+
+		});
+
+		$('.button6').click(function()
+		{
+			$('.button6').addClass('submittedLessMove');
+
+		});
+
+		$('.button7').click(function()
+		{
+			$('.button7').addClass('submittedLessMove');
+
+		});
+
+		$('.button8').click(function()
+		{
+			$('.button8').addClass('submittedLessMove');
+
+		});
+
+		$('.button9').click(function()
+		{
+			$('.button9').addClass('submittedNoMove');
+
+		});
+
+		$('.button10').click(function()
+		{
+			$('.button10').addClass('submittedLessMove');
+
+		});
+
+	}); **/
+
+</script> 
+
+<!-- SPECIFIC SCRIPTS -->
+
+<!-- BAR SCRIPT -->
+
+<script>
+
+	$('#bar').click(function()
+	{
+
+		$('#bar').removeClass('unclicked');
+		$('#bar').addClass('clicked');
+
+	});
+
+</script>
+
+<!-- END BAR SCRIPT -->
+
+<!-- BUTTONS SCRIPT -->
+
+<script>
+
+	var resultText="<b>Shucks.</b> To be fair, 3/4 of a second isn't exactly a long time to make a decision.  The reason I made the duration so short is because I wanted to use placement (swapping) and color to try and trick you into thinking green was 'decline' and red was 'accept' when it is often the opposite.  This can be similar to when you're downloading files and come accross an installer that goes through countless 'I Agree' pages, and more recently their formats have changed so that you have to hit 'Decline' so that you do not download toolbars or change your browser defaults. In addition to the color, placement is also extremely important.  We have been conditioned to expect 'accept/yes' options to be on the left and 'decline/no' options to be on the right.  Another example of this position conditioning is where the 'X' close button is located.  Almost everyone expects the close button to be in the top right (PC) or top left (OSX), but some advertising developers are moving it to the bottom or delaying its visibility to further trick web users.";
+
+	var answer="incorrect";
+
+	function result(elementClicked)
+	{
+		var accept = document.getElementById('accept');
+		var decline = document.getElementById('decline');
+
+		if (elementClicked == accept)
+		{
+			resultText = "<b>Hey!  Good catch!</b>  As you might have noticed, it wasn't just the placement I was changing.  Color is an extremely strong indicator of what should/shouldn't be done within a webpage.  Often, red is associated with 'warnings' or 'are you sure?' statements like deleting posts, unsubscribing, etc. In addition to the color, placement is also extremely important.  We have been conditioned to expect 'accept/yes' options to be on the left and 'decline/no' options to be on the right.  Another example of this position conditioning is where the 'X' close button is located.  Almost everyone expects the close button to be in the top right (PC) or top left (OSX), but some advertising developers are moving it to the bottom or delaying its visibility to further trick web users.";
+
+			answer="correct";
+		}
+
+		else if (elementClicked == decline)
+		{
+			resultText = "<b>Oh, so close!</b>  To be fair, I didn't just swap the normal placement of accept/decline buttons.  Green is often associated with 'submit', 'accept', or something positive that the user wants/has to do in order to continue on a webpage or app.  Changing the colors can drastically change the implications of a button, which is why it is good to stick to design standards when it comes to preventing someone from accidentally deleting their accounts online and losing valuable information.  In addition to the color, placement is also extremely important.  We have been conditioned to expect 'accept/yes' options to be on the left and 'decline/no' options to be on the right.  Another example of this position conditioning is where the 'X' close button is located.  Almost everyone expects the close button to be in the top right (PC) or top left (OSX), but some advertising developers are moving it to the bottom or delaying its visibility to further trick web users.";
+
+			answer="incorrect";
+		}
+	}
+
+	function change()
+	{
+		var counter = 3;
+
+		document.getElementById("ready").value=counter;
+
+		setInterval(function()
+		{
+			counter--;
+
+			if (counter > 0)
+			{
+				document.getElementById("ready").value=counter;
+			}
+
+			else
+			{
+				$("#rdyButton").addClass('hide');
+				$("#buttons").removeClass('hide');
+				$("#buttons").addClass('show');
+			}
+		}, 1000);
+
+		
+
+		setTimeout(function()
+		{		
+
+			document.getElementById('buttonText').innerHTML = resultText;
+
+			$('#buttonText').addClass(answer);
+			document.getElementById('decline').setAttribute("style", "background: transparent; border: 2px dashed #f44542;");
+			document.getElementById('accept').setAttribute("style", "background: transparent; border: 2px dashed #04db89;");
+
+		}, 3750)
+
+	}
+
+</script>
+
+<!-- MENU SCRIPTS -->
+
+<script>
+
+	function menu()
+	{
+		$('#hiddenMenuContent').slideToggle(2000);
+	}
+
+</script>
+
+<!-- PARALLAX SCRIPTS -->
+<script>
+    var options = {
+        effectWeight: 1.5,
+        outerBuffer: 1.30,
+        elementDepth: 100,
+        smoothingMultiplier: 1.5,
+        directions: [ 1, 1, -1, 1, 1, 1, 1, 1 ]
+    };
+
+    $("#par2").logosDistort(options);
+
+</script>
+
+<script>
+
+	var particles = {
+        dotColor: '#8dbcef',
+        lineColor: '#3b5d82',
+        density: 20000,
+        parallax: false
+    };
+    var particleDensity;
+    var options = {
+            effectWeight: 1,
+            outerBuffer: 1.05,
+            elementDepth: 200,
+            perspectiveMulti: 1.5,
+            enableSmoothing: true,
+            onInit: function() {
+              $('#particle-target').particleground(particles);
+            }
+        };
+
+    $(document).ready(function() {
+
+      $('#par1').logosDistort(options);
+
+    });
+
+</script>
+
+<!-- TYPE SCRIPTS -->
+
+<script>
+
+jQuery(document).ready(function ($) {
+  
+	var slideCount = $('#slider ul li').length;
+	var slideWidth = $('#slider ul li').width();
+	var slideHeight = $('#slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#slider').css({ width: slideWidth, height: slideHeight });
+	
+	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+    $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});    
+
+</script>
+
+<!-- END TYPE SCRIPTS -->
+
+</body>
+
+</html>

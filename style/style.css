@@ -1,0 +1,1256 @@
+@font-face
+{
+	font-family: Industry;
+	src: url(../assets/fonts/Industry.otf);
+}
+
+@font-face
+{
+	font-family: Fat Frank;
+	src: url(../assets/fonts/Fat-Frank.otf);
+}
+
+@font-face
+{
+	font-family: Bebas;
+	src: url(../assets/fonts/Bebas/BebasNeueRegular.otf);
+}
+
+@font-face
+{
+	font-family: RSRegular;
+	src: url(../assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf);
+}
+
+@font-face
+{
+	font-family: RSThin;
+	src: url(../assets/fonts/RobotoSlab/RobotoSlab-Thin.ttf);
+}
+
+@font-face
+{
+	font-family: RSLight;
+	src: url(../assets/fonts/RobotoSlab/RobotoSlab-Light.ttf);
+}
+
+@font-face
+{
+	font-family: RSBold;
+	src: url(../assets/fonts/RobotoSlab/RobotoSlab-Bold.ttf);
+}
+
+h1
+{
+	font-family: RSBold, Arial, Sans-serif;
+	font-size: 80px;
+	color: white;
+
+	letter-spacing: -8px;
+}
+
+h2
+{
+	font-family: RSLight, Arial, Sans-serif;
+	font-size: 10.5px;
+	color: white;
+	letter-spacing: 10.5px;
+
+	padding-bottom: 10px;
+}
+
+p
+{
+	font-family: RSLight, Arial, Sans-serif;
+	line-height: 25px;
+	letter-spacing: 1.5px;
+	font-size: 16.5px;
+	color: white;
+}
+
+body
+{
+
+	background: linear-gradient(270deg, #262626, #2d2d2d, #111111);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+} 
+    @-webkit-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@-moz-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@keyframes Gradient { 
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+
+#opt
+{
+	padding: 0 5px 0 5px;
+}
+
+.slide
+{
+	z-index: 9999;
+}
+
+.submitted
+{
+	background: url('../images/submitted.png')no-repeat center center !important;
+
+	margin-top: 200px;
+
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.submittedLessMove
+{
+	background: url('../images/submitted.png')no-repeat center center !important;
+
+	margin-top: 50px;
+
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.submittedNoMove
+{
+	background: url('../images/submitted.png')no-repeat center center !important;
+
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+#submitButton
+{
+	background: url("../images/submit.png")no-repeat center center;
+	width: 87px;
+	height: 87px;
+	border: none;
+
+	z-index: 9999;
+
+	position: relative;
+	top: -150px;
+
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+#submitButtonNoMove
+{
+	background: url("../images/submit.png")no-repeat center center;
+	width: 87px;
+	height: 87px;
+	border: none;
+
+	z-index: 9999;
+
+	position: relative;
+	top: -150px;
+
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+#submitButtonNoMove:hover
+{
+	background: url("../images/submithover.png")no-repeat center center;
+	width: 87px;
+	height: 87px;
+
+	margin-top: -5px;
+}
+
+#submitButtonNoMove:focus
+{
+	outline: none;
+	cursor: pointer, hand;
+}
+
+#submitButton:hover
+{
+	background: url("../images/submithover.png")no-repeat center center;
+	width: 87px;
+	height: 87px;
+
+	margin-top: -5px;
+
+}
+
+#submitButton:focus
+{
+	outline: none;
+	cursor: pointer, hand;
+}
+
+/** END GLOBAL DECLARATIONS **/
+
+/** FADE-IN **/
+
+#introBody
+{
+
+    opacity: 0;
+    -moz-animation: fadein 1s ease-in 1s forwards; /* Firefox */
+    -webkit-animation: fadein 1s ease-in 1s forwards; /* Safari and Chrome */
+    -o-animation: fadein 1s ease-in 1s forwards; /* Opera */
+    animation: fadein 1s ease-in 1s forwards;
+}
+
+#introThesis
+{
+	 opacity: 0;
+    -moz-animation: fadein 1s ease-in 5s forwards; /* Firefox */
+    -webkit-animation: fadein 1s ease-in 5s forwards; /* Safari and Chrome */
+    -o-animation: fadein 1s ease-in 5s forwards; /* Opera */
+    animation: fadein 1s ease-in 5s forwards;
+}
+
+#subBrand
+{
+	  opacity: 0;
+    -moz-animation: fadein 1s ease-in 1s forwards; /* Firefox */
+    -webkit-animation: fadein 1s ease-in 1s forwards; /* Safari and Chrome */
+    -o-animation: fadein 1s ease-in 1s forwards; /* Opera */
+    animation: fadein 1s ease-in 1s forwards;
+
+    border-bottom: 1px solid white;
+
+    padding-bottom: 15px;
+}
+
+#brand
+{
+
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/** END FADE-IN **/
+
+/** BEGIN INTRO **/
+
+
+#intro
+{
+	height: 100%;
+	overflow: hidden;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#introThesis
+{
+	font-family: RSRegular, Arial, Sans-serif;
+	font-size: 18px;
+}
+
+#introContainer
+{
+	margin-top: 250px;
+}
+
+#introBody
+{
+	padding-top: 20px;
+}
+
+/**END INTRO **/
+
+/** AGE **/
+
+#ageSection
+{
+	height: 100%;
+	overflow: hidden;
+	
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#ageContent
+{
+	margin-top: 350px;
+}
+
+#ageSection p
+{
+	font-size: 22px;
+}
+
+#submitRow
+{
+	position: relative;
+	bottom: -300px;
+}
+
+input[type=number]
+{
+	border: 0px;
+	background: transparent;
+	width: 90px;
+	border-bottom: 1px solid white;
+	font-size: 50px;
+	letter-spacing: 2px;
+	text-align: center;
+	font-family: RSBold;
+}
+
+input[type=text]:focus
+{
+	outline: none;
+}
+
+input
+{
+	color: white;
+}
+
+#submitForm1
+{
+	position: relative;
+	bottom: -200px;
+}
+
+/** BAR **/
+
+input[type="radio"]
+{
+	margin: 0 10px 0 10px;
+}
+
+#barSection label
+{
+	font-family: RSRegular;
+	font-size: 20px;
+}
+
+#barSection
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#barForm1
+{
+	padding-bottom: 30px;
+}
+
+
+#barInside
+{
+	margin-top: 125px;
+}
+
+#barCopy p
+{
+	color: black;
+	font-family: RSRegular;
+
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+#bar
+{
+	margin-top: 225px;
+	position: relative;
+
+	overflow: hidden;
+
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.unclicked
+{
+
+	background-color: white;
+	height: 500px;
+	width: 3px;
+
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.clicked
+{
+
+	background-color: white;
+	height: 500px;
+	width: 100%;
+
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+#submitForm2
+{
+	position: relative;
+	bottom: -200px;
+}
+
+/** END BAR **/
+
+/** BUTTON SECTION **/
+
+
+input[type=button]:focus
+{
+	outline: none;
+}
+
+
+#buttonSection
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#buttonContent
+{
+	position: relative;
+	top: 275px;
+}
+
+#buttonSection span
+{
+	border-bottom: 1px solid white;
+}
+
+#buttons
+{
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+}
+
+#decline
+{
+	margin-right: 10px;
+}
+
+#rdyButton
+{
+	margin: 0;
+
+	-webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+}
+
+#ready
+{
+	background: transparent;
+	border: 1px solid white;
+	border-radius: 10px;
+	font-family: RSRegular;
+	font-size: 20px;
+	width: 200px;
+	height: 80px;
+
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+#ready:hover
+{
+	font-family: RSBold;
+	background: white;
+	color: #2d2d2d;
+}
+
+
+#decline
+{
+	background: #04db89;
+	border-radius: 10px;
+	font-family: RSRegular;
+	border: none;
+	font-size: 20px;
+	width: 150px;
+	height: 60px;
+
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+#accept
+{
+	background: #f44542;
+	border-radius: 10px;
+	border: none;
+	font-family: RSRegular;
+	font-size: 20px;
+	width: 150px;
+	height: 60px;
+
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+#accept:hover
+{
+	background: #bc3532;
+}
+
+#decline:hover
+{
+	background: #00b771;	
+}
+
+.show
+{
+	display: block;
+
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.hide
+{
+	display: none;
+
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.correct
+{
+	color: #04db89;
+}
+
+.incorrect
+{
+	color: #f44542;
+}	
+
+.incorrectButton
+{
+	background: transparent;
+	border: 2px dashed #f44542;
+}
+
+/** END BUTTON **/
+
+/** MENU STYLE **/
+
+#menuSection
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#menuContent
+{
+	position: relative;
+	top: 375px;
+}
+
+#menuBar1, #menuBar2, #menuBar3
+{
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	margin: 6px 0;
+
+	-webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+}
+
+#menuForm
+{
+	padding: 0px 20px 20px 20px;
+}
+
+#hiddenMenuContent
+{
+
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: white;
+
+	-webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+}
+
+#hiddenMenuContent p
+{
+	color: black;
+	font-family: RSBold;
+	padding-top: 10px;
+}
+
+#hamMenu:hover #menuBar1
+{
+	margin-left: 3px;
+}
+
+#hamMenu:hover #menuBar3
+{
+	margin-left: 3px;
+}
+
+#hamMenu:hover #menuBar2
+{
+	margin-right: 6px;
+}
+
+#hamMenu
+{
+	width: 35px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+#menuForm label
+{
+	font-size: 14px;
+	color: black;
+	font-family: RSRegular;
+}
+
+#submitForm3
+{
+	position: relative;
+	bottom: -160px;
+}
+
+/** END MENU STYLE **/
+
+/** BEGIN PARALLAX-1 STYLE **/
+
+#parallaxSection1
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#parallaxSection1 label
+{
+	color: white;
+	font-family: RSRegular;
+	font-size: 20px;
+}
+
+#parallaxSection1 p
+{
+	font-size: 22px;
+	font-family: RSRegular;
+}
+
+#par1
+{
+	padding: 0;
+}
+
+#spaceImage
+{
+	height: 900;
+	width: 100%;
+}
+
+#particle-target
+{
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+#parallax1Content
+{
+	position: relative;
+	top: 350px;
+	z-index: 9999;
+}
+
+#submitForm4
+{
+	position: relative;
+	bottom: -400px;
+}
+
+/** END PARALLAX 1 **/
+
+/** BEGIN PARALLAX 2 **/
+
+#parallaxSection2
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#parallax2Content
+{
+	position: relative;
+	top: 350px;
+}
+
+#parallaxSection2 label
+{
+	color: black;
+	font-family: RSRegular;
+	font-size: 20px;
+}
+
+#parallaxSection2 p
+{
+	color: black;
+	font-size: 22px;
+	font-family: RSRegular;
+}
+
+#parallaxSection2
+{
+
+	background: linear-gradient(270deg, #ff8e69, #ffbb69, #ffe669, #9eff6b, #6aff74, #69ffa3, #69ffe6, #69e8ff, #69b6ff);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+} 
+    @-webkit-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@-moz-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@keyframes Gradient { 
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+
+#submitForm5
+{
+	position: relative;
+	bottom: -300px;
+}
+
+/** END PARALLAX 2 STYLE **/
+
+/** PARALLAX 3 STYLE **/
+
+#parallaxSection3
+{
+	height: 100%;
+}
+
+#parallaxContent3
+{
+	z-index: 9999;
+	position: relative;
+	top: 350px;
+}
+
+#parallaxContent3 p
+{
+	font-family: RSRegular;
+}
+
+/** END PARALLAX 3 STYLE **/
+
+/** BEGIN TYPE STYLE **/
+
+#typeSection
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#typeContent
+{
+	position: relative;
+	top: 375px;
+}
+
+#typeSection2
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#typeContent2
+{
+	position: relative;
+	top: 225px;
+}
+
+#op1Label
+{
+	font-family: RSLight;
+	background-color: white;
+	border-radius: 10px;
+	color: black;
+	padding: 5px;
+}
+
+#op2Label
+{
+	font-family: RSLight;
+	border-radius: 10px;
+	border: 1px solid white;
+	color: white;
+	padding: 5px;
+}
+
+#op3Label
+{
+	font-family: RSRegular;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	padding: 5px;
+}
+
+#typeSection3
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#typeContent3
+{
+	position: relative;
+	top: 200px;
+}
+
+#op1Label2
+{
+	font-family: RSRegular;
+	background-color: white;
+	border-radius: 10px;
+	color: black;
+	padding: 5px;
+	letter-spacing: -1px;
+}
+
+#op2Label2
+{
+	font-family: RSLight;
+	border-radius: 10px;
+	border: 1px solid white;
+	color: white;
+	padding: 5px;
+	letter-spacing: 1px;
+}
+
+#op3Label2
+{
+	font-family: RSRegular;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	letter-spacing: 5px;
+	padding: 5px;
+}
+
+#typeSection4
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#typeContent4
+{
+	position: relative;
+	top: 250px;
+}
+
+#op1Label3
+{
+	font-family: RSRegular;
+	background-color: white;
+	border-radius: 10px;
+	color: black;
+	padding: 5px;
+}
+
+#op2Label3
+{
+	font-family: Fat Frank;
+	border-radius: 10px;
+	color: black;
+	background-color: white;
+	padding: 5px;
+	letter-spacing: 2px;
+}
+
+#op3Label3
+{
+	font-family: Bebas;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	padding: 5px;
+}
+
+#submitForm6
+{
+	position: relative;
+	bottom: -225px;
+}
+
+
+#submitForm7
+{
+	position: relative;
+	bottom: -160px;
+}
+
+
+#submitForm8
+{
+	position: relative;
+	bottom: -225px;
+}
+
+
+/** END TYPE **/
+
+/** BEGIN LAYOUT **/
+
+#layoutSection
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#layoutContent
+{
+	position: relative;
+	top: 350px;
+}
+
+#layoutSection2
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#layoutContent2
+{
+	position: relative;
+	top: 275px;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  height: 300px;
+  background: white;
+  text-align: center;
+  line-height: 315px;
+  overflow: hidden;
+
+  font-family: RSBold;
+}
+
+
+#layoutQuestion
+{
+	line-height: 15px !important;
+}
+
+#layoutQuestion 
+{
+	position: relative;
+	top: 125px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+#submitForm9
+{
+	position: relative;
+	bottom: -150px;
+}
+
+/** END LAYOUT STYLE **/
+
+/** BEGIN CONCLUSION STYLE **/
+
+#conclusionSection
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#conclusionContainer
+{
+	position: relative;
+	top: 350px;
+}
+
+#conclusionContainer p
+{
+	font-size: 18px;
+}
+
+#conclusionContainer label
+{
+	font-family: RSRegular;
+	color: white;
+	font-size: 16px;
+}
+
+#conclusionSection2
+{
+	height: 100%;
+
+	background-image: linear-gradient(to right, #c4c4c4 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}
+
+#conclusionContainer2
+{
+	position: relative;
+	top: 350px;
+}
+
+#conclusionContainer2 p
+{
+	font-size: 22px;
+	line-height: 30px;
+}
+
+#submitForm10
+{
+	position: relative;
+	bottom: -175px;
+}
+
+/** END CONCLUSION STYLE **/
+
+/** BEGIN BYE STYLE **/
+
+/** END BYE STYLE **/
+
+#byeSection
+{
+	height: 100%;	
+}
+
+#byeContainer
+{
+	position: relative;
+	top: 350px;
+}
+
+#byeContainer p
+{
+	font-size: 26px;
+	line-height: 34px;
+	font-family: RSRegular;
+}
+
+#finalButton
+{
+
+	height: 100px;
+	width: 200px;
+	border-radius: 10px;
+
+	background: linear-gradient(270deg, #ff475c, #ff7282, #ffa371);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+
+	} 
+	    @-webkit-keyframes Gradient {
+			0%{background-position:0% 50%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 50%}
+		}
+		@-moz-keyframes Gradient {
+			0%{background-position:0% 50%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 50%}
+		}
+		@keyframes Gradient { 
+			0%{background-position:0% 50%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 50%}
+		}
+}
+
+#finalButton a p
+{
+	position: relative !important;
+	top: 50px !important;
+	font-family: RSBold !important;
+	color: white !important;
+
+	height: 100px;
+	width: 200px;
+}
+
+/*****END CSS WOOHOO******/

@@ -1,0 +1,5 @@
+[16-Mar-2017 16:12:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connet() in /home/whelpley/public_html/PROJECTS/PROJECT I - IRL/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/whelpley/public_html/PROJECTS/PROJECT I - IRL/index.php on line 24
+[16-Mar-2017 16:13:45 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'whelpley'@'localhost' to database 'project_1' in /home/whelpley/public_html/PROJECTS/PROJECT I - IRL/index.php on line 24
